@@ -1,7 +1,9 @@
 import { faFacebookF, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+import Avatar from '../Avatar/Avatar'
 import SideBarNavItem from './SideBarNavItem/SideBarNavItem'
+import profilePic from '../../assets/img/profile_pic.jpg';
 
 function SideBarNav() {
   const sidebar = [
@@ -13,8 +15,9 @@ function SideBarNav() {
   ]
   return (
     <nav className="h-screen w-72 fixed left-0 top-0  bg-theme-secondary">
-      <div className="mt-24 mb-12 flex flex-col items-center">
-        <h1 className="text-2xl font-extrabold text-white">Dhiman Roy</h1>
+      <div className="mt-16 mb-10 flex flex-col items-center">
+        <Avatar img={profilePic} />
+        <h1 className="mt-3 text-2xl font-extrabold text-white">Dhiman Roy</h1>
         <p className="text-xs text-white">Front-end Developer</p>
       </div>
       <ul className="">
