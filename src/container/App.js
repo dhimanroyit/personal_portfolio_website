@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from '../components/pages/Home/Home';
 import SideBarNav from '../components/SideBarNav/SideBarNav';
 import './App.css';
 
@@ -10,7 +11,7 @@ function App() {
         <div className="ml-72">
           <Switch>
             <Route exact path="/">
-              <h1>home</h1>
+              <Home />
             </Route>
             <Route path="/project">
               <h1>project</h1>
