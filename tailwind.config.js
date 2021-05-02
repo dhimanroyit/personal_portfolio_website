@@ -3,11 +3,15 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      color: {
-        primary: '#e84545',
-        secondary: '#2b2e4a'
+      colors: {
+        'theme-primary': '#e84545',
+        'theme-secondary': '#2b2e4a'
       }
+      
     },
+    fontFamily: {
+      sans: ['Open Sans', 'sans-serif']
+    }
   },
   variants: {
     extend: {},

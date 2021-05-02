@@ -1,11 +1,13 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import SideBarNav from '../components/SideBarNav/SideBarNav';
 import './App.css';
 
 function App() {
   return (
     <Router>
       <div className="">
-        <div className="">
+        <SideBarNav />
+        <div className="ml-72">
           <Switch>
             <Route exact path="/">
               <h1>home</h1>
