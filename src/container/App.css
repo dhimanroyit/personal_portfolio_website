@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+  .section-heading::after {
+    @apply absolute left-full bottom-0 border-theme-primary;
+    content: '';
+    border-width: 26px;
+    border-bottom-color: transparent;
+    border-right-color: transparent; 
+  }
+}

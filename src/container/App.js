@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from '../components/pages/Home/Home';
+import Project from '../components/pages/Project/Project';
 import SideBarNav from '../components/SideBarNav/SideBarNav';
 import './App.css';
 
@@ -14,7 +15,7 @@ function App() {
               <Home />
             </Route>
             <Route path="/project">
-              <h1>project</h1>
+              <Project />
             </Route>
             <Route path="/resume">
               <h1>resume</h1>
